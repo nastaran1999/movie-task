@@ -1,0 +1,60 @@
+@import "../../assets/sass/variable";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white !important;
+}
+
+.main-container{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .search-box-wrapper{
+        width: 77%;
+        display: flex;
+        flex-direction: row;
+        margin: 2% auto;
+        background-color: $grey-background;
+        padding: 1%;
+        border-radius: 12px;
+
+        h5{
+            margin: auto 2%;
+            margin-left: 2%;
+        }
+
+        .date-picker{
+            width: 20%;
+            margin: auto 1%;
+        }
+
+        .search-button{
+            padding: 0.5rem 1.5rem;
+            margin: auto;
+            margin-right: 2%;
+        }
+    }
+
+    .movies-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+
+    .pagination{
+        margin: 1% auto;
+    }
+
+    .show-result{
+        width: 100%;
+        text-align: center;
+        margin: 1% auto;
+    }
+}
